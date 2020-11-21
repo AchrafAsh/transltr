@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'transltr'
+import TransltrWidget from 'transltr'
 import 'transltr/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+    return <TransltrWidget />
 }
 
 export default App

@@ -1,10 +1,11 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import Widget from './widget'
+import { LangProvider } from './providers/index'
 
-interface Props {
-  text: string
-}
+const TransltrWidget = () => (
+    <LangProvider>
+        <Widget />
+    </LangProvider>
+)
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export default TransltrWidget
