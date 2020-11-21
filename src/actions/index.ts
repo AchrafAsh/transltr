@@ -1,10 +1,7 @@
 import { Dispatch } from 'react'
 import { Action } from '../reducers/index'
 
-const API_URI =
-    process.env.NODE_ENV === 'production'
-        ? 'https://transltr-api.herokuapp.com'
-        : 'http://localhost:5000'
+const API_URI = 'https://transltr-api.herokuapp.com'
 
 export const getAvailableTranslations = () => async (
     dispatch: Dispatch<Action>

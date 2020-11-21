@@ -5,10 +5,7 @@ import { getAvailableTranslations } from './actions'
 
 import styles from './styles.css'
 
-const API_URI =
-    process.env.NODE_ENV === 'production'
-        ? 'https://transltr-api.herokuapp.com'
-        : 'http://localhost:5000'
+const API_URI = 'https://transltr-api.herokuapp.com'
 
 interface TranslationType {
     id: number
