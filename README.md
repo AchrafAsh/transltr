@@ -15,12 +15,12 @@ npm install --save transltr
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'transltr'
+import TransltrWidget from 'transltr'
 import 'transltr/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <TransltrWidget />
   }
 }
 ```
